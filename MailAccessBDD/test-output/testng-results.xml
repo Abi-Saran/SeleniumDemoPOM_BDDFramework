@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-02T19:52:14 IST" name="Default suite" finished-at="2023-02-02T19:52:36 IST" duration-ms="21930">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.test.MailAccess.bdd.runner.CucumberRunner@55740540]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-02-02T19:52:14 IST" name="Default test" finished-at="2023-02-02T19:52:36 IST" duration-ms="21930">
+      <class name="com.test.MailAccess.bdd.runner.CucumberRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.test.MailAccess.bdd.runner.CucumberRunner@55740540]" started-at="2023-02-02T19:52:14 IST" name="setUpClass" finished-at="2023-02-02T19:52:15 IST" duration-ms="886" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7996d0d4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.test.MailAccess.bdd.runner.CucumberRunner@55740540]" started-at="2023-02-02T19:52:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-02T19:52:36 IST" duration-ms="20584" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at com.test.MailAccess.bdd.common.CommonLibrary_BDD.compareText(CommonLibrary_BDD.java:207)
+at com.test.MailAccess.bdd.stepdefs.LoginTest_Outlook_BDD_Steps.verifyAccName(LoginTest_Outlook_BDD_Steps.java:72)
+at ✽.User checks the account name as "sa.saran@outlook.com"(file:///G:/Recovered/Downloads/Softwares/Eclipse/Workspaces/Test2/MailAccessBDD/src/test/resources/features/outlooklogin.feature:15)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.test.MailAccess.bdd.runner.CucumberRunner@55740540]" started-at="2023-02-02T19:52:36 IST" name="tearDownClass" finished-at="2023-02-02T19:52:36 IST" duration-ms="406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.test.MailAccess.bdd.runner.CucumberRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
